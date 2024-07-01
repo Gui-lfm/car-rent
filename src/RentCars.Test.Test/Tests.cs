@@ -507,7 +507,7 @@ public class TestReq10
 
             var daysRented = 10;
             var expectedPrice = 700.0;
-            Rent instance = new Rent(vehicle, person, 10);
+            Rent instance = new Rent(vehicle, person, daysRented);
             instance.Vehicle.Should().BeEquivalentTo(vehicle);
             instance.Person.Should().BeEquivalentTo(person);
             instance.Price.Should().Be(expectedPrice);
